@@ -32,7 +32,7 @@ public class GrupoController {
     }
 
     @PostMapping
-   // @Secured({"ROLE_ADMIN"})
+    //@Secured({"ROLE_ADMIN"})
     public ResponseEntity<String> insert(@RequestBody Grupo grupo) {
         GrupoDTO g = service.insert(grupo);
         URI location = getUri(g.getId());
