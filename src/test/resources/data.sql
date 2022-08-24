@@ -7,7 +7,7 @@ insert into user(id,nome,email,login,senha) values (2,'User','user@gmail.com','u
 insert into user_roles(user_id,role_id) values(1, 2);
 insert into user_roles(user_id,role_id) values(2, 1);
 
-# INSERT INTO grupo (id, nome, assunto) VALUES
-# (1, 'Café', 'assunto 01'),
-# (2, 'Café 02', 'assunto 02');
+INSERT INTO grupo (id, nome, assunto) VALUES
+(1, 'Café', 'assunto 01'),
+(2, 'Café 02', 'assunto 02');
 

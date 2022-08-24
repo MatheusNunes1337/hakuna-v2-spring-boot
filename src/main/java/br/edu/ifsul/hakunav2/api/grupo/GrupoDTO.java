@@ -9,9 +9,15 @@ import java.math.BigDecimal;
 public class GrupoDTO {
     private Long id;
     private String nome;
+    private String assunto;
 
     public static GrupoDTO create(Grupo g){
         ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(g, GrupoDTO.class);
+    }
+
+    public static Grupo create(GrupoDTO g){
+        ModelMapper modelMapper = new ModelMapper();
+        return modelMapper.map(g, Grupo.class);
     }
 }
